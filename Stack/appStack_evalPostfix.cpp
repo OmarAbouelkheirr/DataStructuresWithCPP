@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
 
 int isEmpty(int top)
@@ -103,10 +105,11 @@ int main()
 
     int top = -1;
     int arr[] = {0};
+    string exp;
 
-	string exp = "6 5 3 2 + 8 * + 3 + *";
+    cout << "Enter exp: ";
+    getline(cin , exp);
 
 	int res = evalPostfix(exp, top , arr);
-
-    cout << "The result of [ " << exp << " ] is " << res;
+    cout << "\nThe result of [ " << exp << " ] is " << res;
 }
