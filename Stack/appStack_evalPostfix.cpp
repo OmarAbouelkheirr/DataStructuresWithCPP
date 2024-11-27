@@ -74,7 +74,7 @@ int calc(int op , int val1 , int val2)
 	return ans;
 }
 
-int evalPostfix(const string & ex , int top , int arr[])
+int evalPostfix(string &ex , int top , int arr[])
 {
 	for(int i = 0; i < ex.length(); i++)
 	{
